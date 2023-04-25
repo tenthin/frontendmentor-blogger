@@ -1,0 +1,92 @@
+.header-container{
+    background-image:linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+}
+
+.header{
+    background-image: url('../../images/bg-pattern-intro-desktop.svg');
+    padding-bottom: 5rem;
+    background-repeat: no-repeat;
+    background-position: -257px;
+    background-size: 200%;
+    color: #fff;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    flex-grow: 1;
+    margin-left: 9rem;
+}
+.header-top ul{
+    display: flex;
+    list-style: none;
+    font-size: 10px;
+}
+
+.top-ul-1 li{
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.top-ul-1{
+    flex-grow: 10;
+}
+
+.top-ul-2{
+    margin-right: 9rem;
+}
+.top-ul-2 li{
+    margin-right: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    /* border: 1px solid #fff; */
+    border-radius: 20px;
+    font-size: 10px;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.top-ul-2 li:hover{
+    color: hsl(353, 100%, 62%);
+    background-color: white;
+}
+
+.header-bottom{
+    text-align: center;
+}
+
+.header-bottom h2{
+    margin: 0;
+    font-size: 3rem;
+}
+.header-bottom ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.header-bottom p{
+    font-size: 12px;
+}
+
+.header-bottom ul li{
+    list-style:none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 10px;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header-bottom ul li:hover{
+    color: hsl(353, 100%, 62%);
+    background-color: white;
+}
+

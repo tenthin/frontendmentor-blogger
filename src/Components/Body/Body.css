@@ -1,0 +1,119 @@
+.body-container{
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.content {
+    overflow: hidden;
+    padding: 3rem 6rem;
+    /*position relative to mobile image*/
+    position: relative; 
+    
+}
+.content h2{
+    color: hsl(208, 49%, 24%);
+    text-align: center;
+    margin: 6rem auto 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.content img{
+    width: 800px;
+    margin-top: -210px;
+    margin-right: -340px;
+    margin-left: 115px;
+    float: right;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    color: hsl(208, 49%, 24%);
+}
+
+.content p{
+    font-size: 0.9rem;
+    line-height: 1.9;
+    width: 42%;
+    text-align: justify;
+}
+
+.content-1{
+    position: relative;
+}
+
+.mobileAndPara{
+    background-image: linear-gradient(to right,hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+    overflow: hidden;
+    position: relative;
+    height: 40%;
+    border-radius: 0 130px 0 130px;
+    margin-bottom: 5rem;
+}
+
+.bigCircle{
+    width: 73%;
+    margin-top: -550px;
+    margin-left: -235px;
+    float: left;
+}
+
+.headingPara{
+    position: absolute;
+    left: 740px;
+}
+
+.headingPara h3{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 7rem;
+}
+
+.headingPara h3, .headingPara p{
+   color: hsl(0, 0%, 100%);
+}
+
+.headingPara p{
+    line-height: 1.9;
+    margin-right: 7rem;
+    font-size: 15px;
+}
+
+.mobile{
+    position: absolute;
+    top: 800px;
+    left: 130px;
+    /* padding-bottom: 4rem; */
+}
+
+.content-2{
+    position: relative;
+    overflow: hidden;
+}
+.laptop{
+    position: absolute;
+    left: -275px;
+}
+
+.context{
+    float: right;
+    margin-top: 11rem;
+    margin-bottom: 20rem;
+    margin-right: 265px;
+}
+
+.context h3{
+    font-size: 1.5rem;
+    color: hsl(208, 49%, 24%);
+}
+
+.context p{
+    font-size: 0.9rem;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.context-first{
+    margin-bottom: 4rem;
+}
