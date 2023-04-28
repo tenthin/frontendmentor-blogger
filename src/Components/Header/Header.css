@@ -1,20 +1,23 @@
 .header-container{
     background-image:linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    border-radius: 0 0 0 120px;
 }
 
 .header{
     background-image: url('../../images/bg-pattern-intro-desktop.svg');
     padding-bottom: 5rem;
     background-repeat: no-repeat;
-    background-position: -257px;
-    background-size: 200%;
+    background-position: -335px -1260px;
+    background-size: 210%;
     color: #fff;
+    font-family: Overpass;
 }
 
 .header-top{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 20px;
 }
 
 .logo{
@@ -24,35 +27,81 @@
 .header-top ul{
     display: flex;
     list-style: none;
-    font-size: 10px;
-}
-
-.top-ul-1 li{
-    margin-right: 0.5rem;
-    cursor: pointer;
 }
 
 .top-ul-1{
     flex-grow: 10;
 }
 
+.top-ul-1 li{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.top-ul-1 li:hover{
+    text-decoration: underline;
+}
+
+.connect{
+    position: relative;
+}
+
+.connect div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    padding: 0;
+    line-height: 2.5;
+    background-color: #fff;
+    color: black;
+    width: 80px;
+    position: absolute;
+    left: -25px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-right: 95px;
+}
+
+.connect-dropdown li:hover {
+    font-weight: bold;
+}
+
 .top-ul-2{
     margin-right: 9rem;
 }
+
 .top-ul-2 li{
     margin-right: 2rem;
     cursor: pointer;
     padding: 0.5rem 1rem;
     /* border: 1px solid #fff; */
     border-radius: 20px;
-    font-size: 10px;
+    font-size: 14px;
     margin-right: 1rem;
     font-weight: bold;
 }
 
-.top-ul-2 li:hover{
+.login:hover{
     color: hsl(353, 100%, 62%);
     background-color: white;
+}
+
+.signup:hover{
+    color:white;
+    background-color:hsl(355, 100%, 74%);
 }
 
 .header-bottom{
@@ -60,8 +109,10 @@
 }
 
 .header-bottom h2{
+    font-weight: 600;
+    padding-top: 95px;
     margin: 0;
-    font-size: 3rem;
+    font-size: 3.3rem;
 }
 .header-bottom ul{
     display: flex;
@@ -71,22 +122,60 @@
 }
 
 .header-bottom p{
-    font-size: 12px;
+    font-size: 15px;
+    word-spacing: 2px;
+    margin-top: 10px;
 }
 
 .header-bottom ul li{
     list-style:none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border: 1px solid #fff;
     border-radius: 20px;
-    font-size: 10px;
+    font-size: 12px;
     margin-right: 1rem;
     cursor: pointer;
     font-weight: bold;
 }
 
-.header-bottom ul li:hover{
+.light-orange:hover{
+    color:white;
+    background-color:hsl(355, 100%, 74%);
+}
+.white:hover{
     color: hsl(353, 100%, 62%);
     background-color: white;
 }
 
+@media(max-width:375px){
+    .header{
+        background-size: 300%;
+        background-position: -260px -220px;
+    }
+
+    .header-top{
+        margin: 0;
+        padding: 30px 20px 0;
+        display: flex;
+    }
+    
+    .header-top ul{
+        display:none;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
+    .header-bottom h2{
+        font-weight: 300;
+        font-size: 35px;
+        padding: 130px 30px 10px;
+    }
+
+    .header-bottom p{
+        padding: 0;
+        font-size: 20px;
+        margin: 0 23px;
+    }
+}

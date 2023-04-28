@@ -37,3 +37,7 @@ justify-content: space-evenly;
     cursor: pointer;
     color: hsl(240, 2%, 79%);
 }
+
+.footer-menu div ul li:hover{
+    text-decoration: underline;
+}

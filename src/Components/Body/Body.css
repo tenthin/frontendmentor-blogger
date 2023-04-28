@@ -19,12 +19,16 @@
     font-weight: 600;
 }
 
-.content img{
+.editor-desktop{
     width: 800px;
     margin-top: -210px;
     margin-right: -340px;
     margin-left: 115px;
     float: right;
+}
+
+.editor-mobile{
+    display: none;
 }
 
 .content h3 {
@@ -40,29 +44,28 @@
 }
 
 .content-1{
-    position: relative;
-}
-
-.mobileAndPara{
     background-image: linear-gradient(to right,hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+    border-radius:0 130px 0 130px;
     overflow: hidden;
-    position: relative;
-    height: 40%;
-    border-radius: 0 130px 0 130px;
-    margin-bottom: 5rem;
 }
 
 .bigCircle{
+    background-image: url('../../images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
     width: 73%;
-    margin-top: -550px;
-    margin-left: -235px;
-    float: left;
 }
 
-.headingPara{
+.mobile{
+    /* background-image: url('../../images/illustration-phones.svg'); */
+    height: 405px;
+    margin-bottom: 5rem;
+    background-repeat: no-repeat;
+}
+
+/* .headingPara{
     position: absolute;
     left: 740px;
-}
+} */
 
 .headingPara h3{
     font-size: 2rem;
@@ -78,13 +81,6 @@
     line-height: 1.9;
     margin-right: 7rem;
     font-size: 15px;
-}
-
-.mobile{
-    position: absolute;
-    top: 800px;
-    left: 130px;
-    /* padding-bottom: 4rem; */
 }
 
 .content-2{
@@ -116,4 +112,42 @@
 
 .context-first{
     margin-bottom: 4rem;
+}
+
+@media(max-width:375px){
+    .content{
+        padding: 50px 20px;
+    }
+
+    .content h2{
+        margin: 6rem auto 3rem;
+    }
+
+    .content h3{
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+
+    .content p{
+        padding: 0 2rem;
+        margin: 0;
+        width: auto;
+        text-align: center;
+    }
+    .editor-desktop{
+        display: none;
+    }
+
+    .editor-mobile{
+        display: block;
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    .mobile{
+        position: static;
+        width: 100%;
+    }
 }

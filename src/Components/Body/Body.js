@@ -2,15 +2,16 @@ import React from "react";
 import "./Body.css";
 import desktopIllustraion from "../../images/illustration-editor-desktop.svg";
 import mobile from "../../images/illustration-phones.svg";
-import bigCircle from "../../images/bg-pattern-circles.svg";
 import laptop from "../../images/illustration-laptop-desktop.svg";
+import editorMobile from "../../images/illustration-editor-mobile.svg";
 
 export default function Body() {
   return (
     <div className="body-container">
       <div className="content">
         <h2>Designed for the Future</h2>
-        <img src={desktopIllustraion} alt="" />
+        <img src={desktopIllustraion} alt="" className="editor-desktop" />
+        <img src={editorMobile} alt="" className="editor-mobile" />
         <h3>Introducing an extensible editor</h3>
         <p>
           Blogr features an exceedingly intuitive interface which lets you focus
@@ -30,8 +31,10 @@ export default function Body() {
       </div>
 
       <div className="content-1">
-        <div className="mobileAndPara">
-          <img src={bigCircle} alt="" className="bigCircle" />
+        <div className="bigCircle">
+          <div className="mobile">
+            <img src={mobile} alt="" />
+          </div>
           <div className="headingPara">
             <h3>State of the Art Infrastructure</h3>
             <p>
@@ -43,7 +46,6 @@ export default function Body() {
           </div>
         </div>
       </div>
-      <img src={mobile} alt="" className="mobile" />
 
       <div className="content-2">
         <img src={laptop} alt="" className="laptop" />
