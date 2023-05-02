@@ -4,7 +4,7 @@ import desktopIllustraion from "../../images/illustration-editor-desktop.svg";
 import mobile from "../../images/illustration-phones.svg";
 import laptop from "../../images/illustration-laptop-desktop.svg";
 import editorMobile from "../../images/illustration-editor-mobile.svg";
-
+import mobileLaptop from "../../images/illustration-laptop-mobile.svg";
 export default function Body() {
   return (
     <div className="body-container">
@@ -30,46 +30,45 @@ export default function Body() {
         </p>
       </div>
 
-      <div className="content-1">
-        <div className="bigCircle">
-          <div className="mobile">
-            <img src={mobile} alt="" />
+      <div class="content-0">
+        <div className="content-1">
+          <div className="bigCircle">
+            <div className="headingPara">
+              <h3>State of the Art Infrastructure</h3>
+              <p>
+                With reliability and speed in mind, worldwide data centers
+                provide the backbone for ultra-fast connectivity. This ensures
+                your site will load instantly, no matter where your readers are,
+                keeping your site competitive.
+              </p>
+            </div>
           </div>
-          <div className="headingPara">
-            <h3>State of the Art Infrastructure</h3>
-            <p>
-              With reliability and speed in mind, worldwide data centers provide
-              the <br /> backbone for ultra-fast connectivity. This ensures your
-              site will load <br /> instantly, no matter where your readers are,
-              keeping your site <br /> competitive.
-            </p>
-          </div>
+        </div>
+        <div className="mobile">
+          <img src={mobile} alt="" />
         </div>
       </div>
 
       <div className="content-2">
         <img src={laptop} alt="" className="laptop" />
+        <img src={mobileLaptop} alt="" className="mobileLaptop" />
         <div className="context">
           <div className="context-first">
             <h3>Free, open, simple</h3>
             <p>
-              Blogr is a free and open source application backed by a large{" "}
-              <br />
-              community of helpful developers. It supports features such as code{" "}
-              <br />
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
               syntax highlighting, RSS feeds, social media integration,
-              third-party <br />
-              commenting tools, and works seamlessly with Google Analytics. The{" "}
-              <br />
-              architecture is clean and is relatively easy to learn.
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
             </p>
           </div>
           <div className="context-second">
             <h3>Powerful tooling</h3>
             <p>
               Batteries included. We build a simple and straightforward CLI tool
-              that <br />
-              makes customization and deployment a breeze, but capable of <br />
+              that makes customization and deployment a breeze, but capable of
               producing even the most complicated sites.
             </p>
           </div>

@@ -43,34 +43,47 @@
     text-align: justify;
 }
 
+.content-0{
+    position: relative;
+}
+
 .content-1{
     background-image: linear-gradient(to right,hsl(237, 17%, 21%),hsl(237, 23%, 32%));
-    border-radius:0 130px 0 130px;
+    border-radius: 0 130px 0 130px;
+    position: relative;
+    margin-bottom: 7rem;
     overflow: hidden;
 }
 
 .bigCircle{
     background-image: url('../../images/bg-pattern-circles.svg');
     background-repeat: no-repeat;
-    width: 73%;
+    box-sizing: border-box;
+    height: 400px;
+    background-position: -215px -500px;
+    overflow: visible;
+    /* padding: 0 100px; */
+    background-size: 70%;
 }
 
 .mobile{
-    /* background-image: url('../../images/illustration-phones.svg'); */
-    height: 405px;
-    margin-bottom: 5rem;
     background-repeat: no-repeat;
+    left: 8%;
+    top: -70px;
+    position: absolute;
 }
 
-/* .headingPara{
-    position: absolute;
-    left: 740px;
-} */
+.headingPara{
+    width: 49%;
+    float: right;
+    margin-top: 110px;
+}
 
 .headingPara h3{
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
+    margin: 0;
 }
 
 .headingPara h3, .headingPara p{
@@ -90,6 +103,10 @@
 .laptop{
     position: absolute;
     left: -275px;
+}
+
+.mobileLaptop{
+    display: none;
 }
 
 .context{
@@ -146,8 +163,79 @@
         float: none;
     }
 
-    .mobile{
-        position: static;
-        width: 100%;
-    }
+  .content-1{
+    position: relative;
+    margin-top: 200px;
+    height: 700px;
+  }
+
+  .bigCircle{
+    padding: 0;
+    background-position: -110px -240px;
+    background-size: 160%;
+    height: 100%;
+  }
+
+  .mobile{
+    background-repeat: no-repeat;
+    top: -175px;
+    position: absolute;
+    left: 0;
+  }
+
+  .mobile img{
+    width: 100%;
+  } 
+
+  /* .img{
+    top: -180px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+  } */
+
+  .headingPara{
+    width: auto;
+    margin-top: 220px;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .headingPara p{
+    margin: 0 60px;
+    text-align: center;
+  }
+
+  .laptop{
+    display: none;
+  }
+
+  .mobileLaptop{
+    display: block;
+  }
+
+  .content-2{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .mobileLaptop{
+    width: 100%;
+    transform: scale(1.3);
+  }
+
+.context{
+    margin: 0 55px;
+    text-align: center;
+}
+
+  .context h3{
+    margin-top: 5rem;
+  }
+
+  .context p{
+        text-align: center;
+}
 }

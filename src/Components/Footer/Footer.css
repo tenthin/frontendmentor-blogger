@@ -41,3 +41,14 @@ justify-content: space-evenly;
 .footer-menu div ul li:hover{
     text-decoration: underline;
 }
+
+@media(max-width:375px){
+    .footer-menu{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    
+}

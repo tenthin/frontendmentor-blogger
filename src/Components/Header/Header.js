@@ -81,7 +81,7 @@ export default function Header() {
             <li className="login">Login</li>
             <li className="signup">Sign Up</li>
           </ul>
-          <div>
+          <div className="menuIcon">
             <MenuIcon />
           </div>
         </div>
